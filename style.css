@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/*
+cor primária: #9D1200;
+cor secundária: #88281B;
+terça: #8F4339;
+quarta: #5C3B37;
+quinta: #332A29; 
+*/
+
+
+* {
+    margin: 0;
+
+}
+
+header {
+    background-color: #C23927;
+}
