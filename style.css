@@ -22,10 +22,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 22px 10%;
 }
 
 #logo-restaurante {
     height: 180px;
+    max-width: 180px;
 }
 
 a {
@@ -37,11 +39,36 @@ a {
     
 }
 
+nav {
+    text-align: center;
+}
+
 #lista-nav {
-    display: inline-flex;
+    display: inline-block;
+    text-align: center;
     justify-content: end;
     list-style-type: none;
 }
+
+#lista-nav li{
+    display: inline-block;
+    width: fit-content;
+    padding: 4px;
+}
+
+header nav button {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 14pt;
+    background-color: green;
+    border: none;
+    border-radius: 3px;
+    padding: 12px;
+    margin: 4px;
+}
+
+/*-------Carrossel:-------*/
 
 #carrossel-de-imagens {
     width: 100%;
@@ -50,16 +77,25 @@ a {
 
 #slides {
     width: 300%;
-    height: 400px;
+    height: 742;
     display: flex;
 }
+
+.slide {
+    text-align: center;
+    align-items: center;
+}
+
+.slide img {
+    height: fit-content;
+}
+
 #slides input {
     display: none;
 }
 
 .imagem-carrossel {
     width: 100vw;
-    min-height: 400px;
 }
 
 .manual-navigation {
@@ -79,7 +115,7 @@ a {
     border-radius: 4px;
     cursor: pointer;
     margin: 10px;
-    transition: 1s;
+    transition: 0.7s;
     background-color: transparent;
 }
 
@@ -100,27 +136,66 @@ a {
 
 .manual-btn:hover  {
     background-color: #FFF;
+    border-radius: 10px;
 }
 
+/*-------Cardápio:-------*/
+
 #cardapio {
-    background-color: #ff7a5c;
+    padding: 16px 5%;
+    background-color: #F5A300;
+}
+
+#corpo-cardapio {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, 300px);
+}
+
+.menu-para-mobile {
+    width: 100%;
+    text-align: center;
+
+}
+
+.menu-para-mobile button {
+    font-size: 20pt;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-para-mobile ul{
+    list-style-type: none;
+}
+
+.container-inline {
+    display: flex;
+    width: 100%;
 }
 
 #seletor-de-pratos {
-    display: flex;
-
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 280px);
 }
 
 #lista-lateral {
+    margin: 16px;
+    padding: 16px;
     background-color: #F5A300;
-    width: 300px;
+    max-width: 300px;
+    height: 300px;
 }
 
-#lista-lateral h3 {
+#lista-lateral h3, .menu-para-mobile ul li {
     cursor: pointer;
 }
 
 #lista-lateral h3:hover {
+    text-decoration: underline;
+}
+
+.menu-para-mobile ul li:hover {
     text-decoration: underline;
 }
 
@@ -147,31 +222,126 @@ a {
     height: 210px;
 }
 
+@media screen and (max-width: 730px){
+    #lista-lateral {
+        display: none;
+    }
+
+    #seletor-de-pratos {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 731px) {
+
+    .menu-para-mobile {
+        display: none;
+    }
+}
+
+/*-----Seção Quem somos:-----*/
+
 #secao-quem-somos {
     margin: 22px 15%;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
+}
+
+#secao-quem-somos img {
+    width: min(610px, 80vw);
+    height: fit-content;
 }
 
 #secao-quem-somos div {
     margin: 22px;
 }
 
+@media screen and (max-width: 1250px) {
+    #secao-quem-somos {
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #secao-quem-somos img {
+        margin-left: -35px;
+    }
+}
+
+/*------Seção Localização:------*/
+
 #secao-localizacao {
     background-color: #F5A300;
-    display: inline-flex;
-    text-align: end;
+    display: flex;
     padding: 16px 15%;
-    align-items: center;
-    justify-content: center;
     width: 100%;
+    align-items: center;
+    margin-left: -40;
+    justify-content: center;
 }
 
 #secao-localizacao div {
     text-align: center;
-    width: 300px;
+    margin: 40px;
+
 }
 
+#secao-localizacao iframe {
+    min-width: 450px;
+    height: 400px;
+}
+
+@media screen and (max-width:730px) {
+    #secao-localizacao {
+        display: block;
+    }
+
+    #secao-localizacao iframe {
+        min-width: none;
+        width: 10px;
+        max-width: 10px;
+        margin-left: -68px;
+    }
+}
+
+/*------Rodapé:-----*/
+
 footer {
-    background-color: #F50000;
+    background-color: #000000;
+    color: white;
+    font-weight: bolder;
+    padding: 16px 10%;
+    justify-content: center;
+}
+
+#footer-layout {
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, 400px);
+}
+
+#footer-layout ul {
+    list-style-type: none;
+    margin: 22px;
+}
+
+.abaixo-footer li{
+    margin: 8px;
+    cursor: pointer;
+}
+
+.redes-sociais {
+    font-size: 22pt;
+    display: flex;
+}
+
+.redes-sociais li {
+    margin: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    #footer-layout {
+        display: block;
+    }
 }
