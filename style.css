@@ -363,13 +363,17 @@ footer {
 }
 
 .redes-sociais {
-    font-size: 22pt;
     display: flex;
 }
 
 .redes-sociais li {
     margin: 8px;
     cursor: pointer;
+}
+
+.redes-sociais li a {
+    color: white;
+    font-size: 22pt;
 }
 
 @media screen and (max-width: 500px) {
