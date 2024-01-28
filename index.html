@@ -59,13 +59,13 @@
         <div id="corpo-cardapio">
             <div class="container-inline">
                 <div id="lista-lateral">
-                    <h3>Entradas</h3>
-                    <h3>Acompanhamentos</h3>
-                    <h3>Executivo</h3>
-                    <h3>Sobremesas</h3>
-                    <h3>Bebidas</h3>
+                    <h3 onclick="mostrador_entradas()">Entradas</h3>
+                    <h3 onclick="mostrador_acompanhamentos()">Acompanhamentos</h3>
+                    <h3 onclick="mostrador_executivo()">Executivo</h3>
+                    <h3 onclick="mostrador_sobremesas()">Sobremesas</h3>
+                    <h3 onclick="mostrador_bebidas()">Bebidas</h3>
                 </div>
-                <div id="seletor-de-pratos">
+                <div id="cardapio-entradas" class="grade-cardapio menu-aberto">
                     <div class="item-cardapio">
                         <h3>Frango especial</h3>
                         <div class="container-imagem-prato">
@@ -101,6 +101,124 @@
                         <div class="container-imagem-prato">
                             <div class="foto-prato">
                                 <img src="images/item-menu-4.jpg" alt="Placeholder">
+                            </div>
+                            <img class="mascara" src="images/mascara-branca.png" alt="">
+                        </div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime neque perferendis consequuntur.</span>
+                    </div>
+                </div>
+                <div id="cardapio-acompanhamentos" class="grade-cardapio">
+                    <div class="item-cardapio">
+                        <h3>Carne com batatas</h3>
+                        <div class="container-imagem-prato">
+                            <div class="foto-prato">
+                                <img src="images/item-menu-5.jpg" alt="Placeholder">
+                            </div>
+                            <img class="mascara" src="images/mascara-branca.png" alt="">
+                        </div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime neque perferendis consequuntur.</span>
+                    </div>
+                    <div class="item-cardapio">
+                        <h3>Batatas fritas</h3>
+                        <div class="container-imagem-prato">
+                            <div class="foto-prato">
+                                <img src="images/item-menu-6.jpg" alt="Placeholder">
+                            </div>
+                            <img class="mascara" src="images/mascara-branca.png" alt="">
+                        </div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime neque perferendis consequuntur.</span>
+                    </div>
+                </div>
+                <div id="cardapio-executivo" class="grade-cardapio">
+                    <div class="item-cardapio">
+                        <h3>Bobó de camarão</h3>
+                        <div class="container-imagem-prato">
+                            <div class="foto-prato">
+                                <img src="images/item-menu-7.jpg" alt="Placeholder">
+                            </div>
+                            <img class="mascara" src="images/mascara-branca.png" alt="">
+                        </div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime neque perferendis consequuntur.</span>
+                    </div>
+                    <div class="item-cardapio">
+                        <h3>Frango cozido</h3>
+                        <div class="container-imagem-prato">
+                            <div class="foto-prato">
+                                <img src="images/item-menu-8.jpg" alt="Placeholder">
+                            </div>
+                            <img class="mascara" src="images/mascara-branca.png" alt="">
+                        </div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime neque perferendis consequuntur.</span>
+                    </div>
+                    <div class="item-cardapio">
+                        <h3>Combinado japonês</h3>
+                        <div class="container-imagem-prato">
+                            <div class="foto-prato">
+                                <img src="images/item-menu-9.jpg" alt="Placeholder">
+                            </div>
+                            <img class="mascara" src="images/mascara-branca.png" alt="">
+                        </div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime neque perferendis consequuntur.</span>
+                    </div>
+                </div>
+                <div id="cardapio-sobremesas" class="grade-cardapio">
+                    <div class="item-cardapio">
+                        <h3>Banana split</h3>
+                        <div class="container-imagem-prato">
+                            <div class="foto-prato">
+                                <img src="images/item-menu-10.jpg" alt="Placeholder">
+                            </div>
+                            <img class="mascara" src="images/mascara-branca.png" alt="">
+                        </div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime neque perferendis consequuntur.</span>
+                    </div>
+                    <div class="item-cardapio">
+                        <h3>Brownie</h3>
+                        <div class="container-imagem-prato">
+                            <div class="foto-prato">
+                                <img src="images/item-menu-11.jpg" alt="Placeholder">
+                            </div>
+                            <img class="mascara" src="images/mascara-branca.png" alt="">
+                        </div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime neque perferendis consequuntur.</span>
+                    </div>
+                    <div class="item-cardapio">
+                        <h3>Red Velvet</h3>
+                        <div class="container-imagem-prato">
+                            <div class="foto-prato">
+                                <img src="images/item-menu-12.jpg" alt="Placeholder">
+                            </div>
+                            <img class="mascara" src="images/mascara-branca.png" alt="">
+                        </div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime neque perferendis consequuntur.</span>
+                    </div>
+                </div>
+                <div id="cardapio-bebidas" class="grade-cardapio">
+                    <div class="item-cardapio">
+                        <h3>Coca-cola</h3>
+                        <div class="container-imagem-prato">
+                            <div class="foto-prato">
+                                <img src="images/item-menu-13.jpg" alt="Placeholder">
+                            </div>
+                            <img class="mascara" src="images/mascara-branca.png" alt="">
+                        </div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime neque perferendis consequuntur.</span>
+                    </div>
+                    <div class="item-cardapio">
+                        <h3>Limonada</h3>
+                        <div class="container-imagem-prato">
+                            <div class="foto-prato">
+                                <img src="images/item-menu-14.jpg" alt="Placeholder">
+                            </div>
+                            <img class="mascara" src="images/mascara-branca.png" alt="">
+                        </div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime neque perferendis consequuntur.</span>
+                    </div>
+                    <div class="item-cardapio">
+                        <h3>Água</h3>
+                        <div class="container-imagem-prato">
+                            <div class="foto-prato">
+                                <img src="images/item-menu-15.jpg" alt="Placeholder">
                             </div>
                             <img class="mascara" src="images/mascara-branca.png" alt="">
                         </div>
@@ -146,6 +264,6 @@
         <span>Kaycke Nizer Palhano &copy; Todos os direitos reservados.</span>
     </footer>
 
-    <script></script>
+    <script src="script.js"></script>
 </body>
 </html>

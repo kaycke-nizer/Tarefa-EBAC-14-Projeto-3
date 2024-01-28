@@ -66,6 +66,7 @@ header nav button {
     border-radius: 3px;
     padding: 12px;
     margin: 4px;
+    cursor: pointer;
 }
 
 /*-------Carrossel:-------*/
@@ -173,9 +174,9 @@ header nav button {
     width: 100%;
 }
 
-#seletor-de-pratos {
+.grade-cardapio {
     width: 100%;
-    display: grid;
+    display: none;
     grid-template-columns: repeat(auto-fill, 280px);
 }
 
@@ -245,6 +246,10 @@ header nav button {
     width: 230px;
     margin-left: -105px;
 
+}
+
+.menu-aberto {
+    display: grid;
 }
 
 @media screen and (max-width: 730px){
